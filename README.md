@@ -3,7 +3,7 @@ Play Music Chrome Extension
 
 This is an extension to allow you to control Play Music from a simple Pop-Up.
 
-<p style="text-align: center;">
+<p align="center">
 	<img src="http://i.imgur.com/9hXuBra.png" alt="Play Music Chrome Extension Screenshot" />
 </p>
 
