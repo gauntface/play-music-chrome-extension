@@ -1,9 +1,11 @@
 {
   "manifest_version": 2,
 
-  "name": "Play Music Controller",
+  "name": "Play Music Extension",
   "description": "This extension allows you to map keyboard controls to Google's Play Music.",
-  "version": "1.0",
+  "version": "1.0.1",
+
+  "author": "Matt Gaunt",
 
   "permissions": [
     "tabs"
@@ -34,5 +36,6 @@
   "icons": {
     "48": "images/headphone-logo-48.png",
     "128": "images/headphone-logo-128.png",
-    "256": "images/headphone-logo-256.png" }
+    "256": "images/headphone-logo-256.png"
+  }
 }
