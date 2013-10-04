@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="64px"
+   height="64px"
+   id="svg3933"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="rewind-btn.svg">
+  <defs
+     id="defs3935" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.8890873"
+     inkscape:cx="14.071517"
+     inkscape:cy="32"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:document-units="px"
+     inkscape:grid-bbox="true"
+     inkscape:window-width="991"
+     inkscape:window-height="682"
+     inkscape:window-x="2"
+     inkscape:window-y="91"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata3938">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <path
+       inkscape:connector-curvature="0"
+       d="m 45,10 0,8 -21,0 C 17.21238,18 12.59783,20.2908 10.1875,24.0625 7.77717,27.8342 7.5,32.4459 7.5,37 l 5.1875,-4.1875 c 0.24936,-2.4522 0.77297,-4.5513 1.71875,-6.0313 C 15.85638,24.5123 18.22947,23 24,23 l 21,0 0,8 L 58,20.4375 45,10 z m 11.5,17 -5.1875,4.1875 c -0.24936,2.4522 -0.77297,4.5513 -1.71875,6.0313 C 48.14362,39.4877 45.77053,41 40,41 L 19,41 19,33 6,43.5625 19,54 19,46 40,46 C 46.78762,46 51.40217,43.7092 53.8125,39.9375 56.22283,36.1658 56.5,31.5541 56.5,27 z"
+       id="path7180"
+       style="fill:#000000;fill-opacity:1;stroke:none;display:inline;enable-background:new" />
+  </g>
+</svg>

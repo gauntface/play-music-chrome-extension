@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="64px"
+   height="64px"
+   id="svg3933"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="rewind-btn.svg">
+  <defs
+     id="defs3935" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.8890873"
+     inkscape:cx="14.071517"
+     inkscape:cy="32"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:document-units="px"
+     inkscape:grid-bbox="true"
+     inkscape:window-width="991"
+     inkscape:window-height="682"
+     inkscape:window-x="2"
+     inkscape:window-y="91"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata3938">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <path
+       inkscape:connector-curvature="0"
+       d="m 45.5,10.51565 0,8.5313 c -8.55581,1.7138 -13.47021,6.9778 -17.875,11.6874 -5.34427,5.7145 -9.99392,10.7188 -22.125,10.7188 l 0,5 c 13.6197,0 20.37039,-6.5269 25.78125,-12.3125 4.26464,-4.56 7.68723,-8.5364 14.21875,-10.0313 l 0,7.4063 13,-10.5625 -13,-10.4375 z m -40,7.0313 0,5 c 9.90389,-2e-4 14.80764,3.3533 19.1875,7.6874 0.376,-0.4016 0.73323,-0.7998 1.125,-1.2187 0.7321,-0.7828 1.50204,-1.5925 2.3125,-2.4063 -4.96845,-4.737 -11.52286,-9.0624 -22.625,-9.0624 z m 40,15.0937 0,7.25 c -4.54039,-1.0391 -7.57458,-3.2938 -10.4375,-6.0937 -0.63666,0.6649 -1.28136,1.3276 -1.96875,2.0624 -0.45656,0.4882 -0.94753,0.9977 -1.4375,1.5 3.52874,3.3356 7.75614,6.3743 13.84375,7.5938 l 0,8.5312 13,-10.4374 -13,-10.4063 z"
+       id="path3856"
+       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans" />
+  </g>
+</svg>

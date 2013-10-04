@@ -1,0 +1,482 @@
+/* line 17, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 12, ../sass/main.scss */
+html, body {
+  min-width: 600px;
+  min-height: 200px;
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+  max-height: 200px;
+  padding: 0;
+  margin: 0;
+  background-color: #ecf0f1;
+}
+
+/* line 29, ../sass/main.scss */
+body {
+  position: relative;
+  color: #95a5a6;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+}
+
+/* line 38, ../sass/main.scss */
+h1 {
+  font-size: 1.5rem;
+}
+
+/* line 42, ../sass/main.scss */
+h2 {
+  font-size: 1.2rem;
+}
+
+/* line 46, ../sass/main.scss */
+p {
+  font-size: 1rem;
+}
+
+/* line 50, ../sass/main.scss */
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* line 59, ../sass/main.scss */
+button:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* line 63, ../sass/main.scss */
+button:active {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* line 67, ../sass/main.scss */
+input {
+  background-color: #f3f6f6;
+  color: #95a5a6;
+}
+
+/* line 72, ../sass/main.scss */
+input:focus {
+  background-color: white;
+}
+
+/* line 76, ../sass/main.scss */
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 81, ../sass/main.scss */
+.page {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+/* line 95, ../sass/main.scss */
+.page.current-page {
+  display: block;
+}
+
+/* line 101, ../sass/main.scss */
+.music-controls-page.current-page,
+.options-page.current-page,
+.no-play-music-tab.current-page {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  padding: 12px 0;
+}
+
+/* line 115, ../sass/main.scss */
+h1 {
+  line-height: 40px;
+}
+
+/* line 119, ../sass/main.scss */
+.additional-options {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  width: 40px;
+  margin: 0 12px;
+}
+/* line 130, ../sass/main.scss */
+.additional-options button {
+  position: relative;
+  height: 40px;
+}
+/* line 136, ../sass/main.scss */
+.additional-options button > svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: 100%;
+  padding: 10%;
+  box-sizing: border-box;
+}
+/* line 149, ../sass/main.scss */
+.additional-options button:first-child {
+  margin-bottom: 56px;
+}
+
+/* line 156, ../sass/main.scss */
+.track-details {
+  position: relative;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  flex: 1;
+  -webkit-flex: 1;
+  overflow: hidden;
+  margin-right: 12px;
+}
+/* line 171, ../sass/main.scss */
+.track-details .album-art {
+  width: 176px;
+  height: albumArtHeight;
+  max-height: 100%;
+}
+/* line 177, ../sass/main.scss */
+.track-details .album-art > img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+/* line 184, ../sass/main.scss */
+.track-details .info-container {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  flex: 2;
+  -webkit-flex: 2;
+  margin-left: 12px;
+}
+/* line 196, ../sass/main.scss */
+.track-details .info-container h2 {
+  flex: 1;
+  -webkit-flex: 1;
+}
+/* line 203, ../sass/main.scss */
+.track-details .music-controls {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  width: 100%;
+}
+/* line 213, ../sass/main.scss */
+.track-details .music-controls button {
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+/* line 220, ../sass/main.scss */
+.track-details .music-controls button > svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: 100%;
+  padding: 10%;
+  box-sizing: border-box;
+}
+/* line 234, ../sass/main.scss */
+.track-details .music-controls .play-pause .play-btn-svg {
+  display: block;
+}
+/* line 238, ../sass/main.scss */
+.track-details .music-controls .play-pause .pause-btn-svg {
+  display: none;
+}
+/* line 244, ../sass/main.scss */
+.track-details .music-controls .play-pause.playing .play-btn-svg {
+  display: none;
+}
+/* line 248, ../sass/main.scss */
+.track-details .music-controls .play-pause.playing .pause-btn-svg {
+  display: block;
+}
+
+/* line 255, ../sass/main.scss */
+.options-content {
+  flex: 1;
+  -webkit-flex: 1;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  margin: 0 12px;
+  overflow-y: auto;
+}
+/* line 266, ../sass/main.scss */
+.options-content h2 {
+  margin-top: 6px;
+}
+/* line 270, ../sass/main.scss */
+.options-content p {
+  margin: 6px 0;
+}
+
+/* line 275, ../sass/main.scss */
+.keyboard-shortcuts-container, .keyboard-shortcut-labels-container {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+}
+
+/* line 283, ../sass/main.scss */
+.keyboard-shortcuts-container > input, .keyboard-shortcut-labels-container > label {
+  flex: 1;
+  -webkit-flex: 1;
+}
+
+/* line 288, ../sass/main.scss */
+.keyboard-shortcuts-container > input {
+  padding: 12px;
+  border: none;
+  outline: none;
+}
+
+/* line 295, ../sass/main.scss */
+.keyboard-shortcut-labels-container > label {
+  font-size: 0.8rem;
+  margin: 12px 0 6px 0;
+}
+
+/* line 301, ../sass/main.scss */
+.no-play-music-content {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+/* line 308, ../sass/main.scss */
+.no-play-music-content header {
+  margin-bottom: 18px;
+}
+/* line 312, ../sass/main.scss */
+.no-play-music-content p:last-of-type {
+  flex: 1;
+  -webkit-flex: 1;
+}
+
+/* line 318, ../sass/main.scss */
+.open-play-tab-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  border-bottom-style: solid;
+  border-color: #949da4;
+  border-radius: 2px;
+  background-color: #afb6bb;
+  color: #ecf0f1;
+  transition: all 0.3s ease;
+}
+
+/* line 335, ../sass/main.scss */
+.open-play-tab-btn:hover {
+  background-color: #a1aab0;
+  border-color: #869198;
+}
+
+/* line 340, ../sass/main.scss */
+.open-play-tab-btn:active {
+  background-color: #949da4;
+  border-color: #78848c;
+  border-width: 1px;
+}
+
+/**
+	SVG Properties
+**/
+/* line 349, ../sass/main.scss */
+.btn {
+  fill: #95a5a6;
+}
+
+/* line 353, ../sass/main.scss */
+.transition-from-center-to-right {
+  -webkit-animation: transCenterToRight 0.6s ease both;
+  animation: transCenterToRight 0.6s ease both;
+}
+
+/* line 358, ../sass/main.scss */
+.transition-from-center-to-left {
+  -webkit-animation: transCenterToLeft 0.6s ease both;
+  animation: transCenterToLeft 0.6s ease both;
+}
+
+/* line 363, ../sass/main.scss */
+.transition-from-left-to-center {
+  -webkit-animation: transLeftToCenter 0.6s ease both;
+  animation: transLeftToCenter 0.6s ease both;
+}
+
+/* line 368, ../sass/main.scss */
+.transition-from-right-to-center {
+  -webkit-animation: transRightToCenter 0.6s ease both;
+  animation: transRightToCenter 0.6s ease both;
+}
+
+@-webkit-keyframes transCenterToRight {
+  /* line 374, ../sass/main.scss */
+  to {
+    -webkit-transform: translateX(100%);
+  }
+}
+
+@keyframes transCenterToRight {
+  /* line 378, ../sass/main.scss */
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@-webkit-keyframes transCenterToLeft {
+  /* line 382, ../sass/main.scss */
+  to {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes transCenterToLeft {
+  /* line 386, ../sass/main.scss */
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes transLeftToCenter {
+  /* line 390, ../sass/main.scss */
+  from {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes transLeftToCenter {
+  /* line 394, ../sass/main.scss */
+  from {
+    transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes transRightToCenter {
+  /* line 398, ../sass/main.scss */
+  from {
+    -webkit-transform: translateX(100%);
+  }
+}
+
+@keyframes transRightToCenter {
+  /* line 402, ../sass/main.scss */
+  from {
+    transform: translateX(100%);
+  }
+}
+
+/* line 407, ../sass/main.scss */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+/* line 412, ../sass/main.scss */
+::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Handle */
+/* line 418, ../sass/main.scss */
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* line 422, ../sass/main.scss */
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(0, 0, 0, 0.2);
+}

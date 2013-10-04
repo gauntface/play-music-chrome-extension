@@ -1,0 +1,424 @@
+@import "compass/reset";
+
+$padding: 12px;
+
+$popUpWidth: 600px;
+$popUpHeight: 200px;
+
+$bg-color: #ecf0f1;
+$primary-color: #95a5a6;
+$secondary-color: #bdc3c7;
+
+html, body {
+	min-width: $popUpWidth;
+	min-height: $popUpHeight;
+
+	width: 100%;
+	height: 100%;
+
+	max-width: $popUpWidth;
+	max-height: $popUpHeight;
+
+	padding: 0;
+	margin: 0;
+
+	background-color: $bg-color;
+
+}
+
+body {
+	position: relative;
+
+	color: $primary-color;
+	font-family: 'Roboto', sans-serif;
+	font-size: 28px;
+	font-weight: 300;
+}
+
+h1 {
+	font-size: 1.5rem;
+}
+
+h2 {
+	font-size: 1.2rem;
+}
+
+p {
+	font-size: 1rem;
+}
+
+button {
+	padding: 0;
+	margin: 0;
+
+	border: none;
+	outline: none;
+	background: none;
+}
+
+button:hover {
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+button:active {
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+input {
+	background-color: lighten($bg-color, 2.5%);
+	color: $primary-color;
+}
+
+input:focus {
+	background-color: white;
+}
+
+svg {
+	max-width: 100%;
+	height: auto;
+}
+
+.page {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	width: 100%;
+	height: 100%;
+
+	padding: $padding;
+
+	box-sizing: border-box;
+}
+
+.page.current-page {
+	display: block;
+}
+
+.music-controls-page.current-page, 
+.options-page.current-page,
+.no-play-music-tab.current-page {
+	display: flex;
+	display: -webkit-flex;
+
+	flex-direction: row;
+	-webkit-flex-direction: row;
+
+	padding: $padding 0;
+}
+
+$numOfOptions: 4;
+$additionalBtnSize: 40px;
+$sparePadding: $popUpHeight - (2 * $padding) - (3 * $additionalBtnSize);
+
+h1 {
+	line-height: $additionalBtnSize;
+}
+
+.additional-options {
+	display: flex;
+	display: -webkit-flex;
+
+	flex-direction:column;
+	-webkit-flex-direction: column;
+
+	width: $additionalBtnSize;
+
+	margin: 0 $padding;
+
+	button {
+		position: relative;
+
+		height: $additionalBtnSize;
+	}
+
+	button > svg {
+		position: absolute;
+		left: 0;
+		top: 0;
+
+		width: auto;
+		height: 100%;
+
+		padding: 10%;
+
+		box-sizing: border-box;
+	}
+
+	button:first-child {
+		margin-bottom: $sparePadding;
+	}
+}
+
+$albumArtHeight: $popUpHeight - (2 * $padding);
+$albumArtWidth: $albumArtHeight;
+.track-details {
+	position: relative;
+
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+
+	flex: 1;
+	-webkit-flex: 1;
+
+	overflow: hidden;
+
+	margin-right: $padding;
+
+	.album-art {
+		width: $albumArtWidth;
+		height: albumArtHeight;
+		max-height: 100%;
+	}
+
+	.album-art > img {
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		max-height: 100%;
+	}
+
+	.info-container {
+		display: flex;
+		display: -webkit-flex;
+
+		flex-direction: column;
+		-webkit-flex-direction: column;
+
+		flex: 2;
+		-webkit-flex: 2;
+
+		margin-left: $padding;
+
+		h2 {
+			flex: 1;
+			-webkit-flex: 1;
+		}
+	}
+	
+	$buttonWidth: 64px;
+	.music-controls {
+		display: flex;
+		display: -webkit-flex;
+		flex-direction: row;
+		-webkit-flex-direction: row;
+		justify-content: space-between;
+		-webkit-justify-content: space-between;
+
+		width: 100%;
+
+		button {
+			position: relative;
+
+			width: $buttonWidth;
+			height: $buttonWidth;
+		}
+
+		button > svg {
+			position: absolute;
+			left: 0;
+			top: 0;
+
+			width: auto;
+			height: 100%;
+
+			padding: 10%;
+
+			box-sizing: border-box;
+		}
+		
+		.play-pause {
+			.play-btn-svg {
+				display: block;
+			}
+
+			.pause-btn-svg {
+				display: none;
+			}
+		}
+
+		.play-pause.playing {
+			.play-btn-svg {
+				display: none;
+			}
+
+			.pause-btn-svg {
+				display: block;
+			}
+		}
+	}
+}
+
+.options-content {
+	flex: 1;
+	-webkit-flex: 1;
+
+	flex-direction: column;
+	-webkit-flex-direction: column;
+
+	margin: 0 $padding;
+
+	overflow-y: auto;
+
+	h2 {
+		margin-top: ($padding / 2);
+	}
+
+	p {
+		margin: ($padding / 2) 0;
+	}
+}
+
+.keyboard-shortcuts-container, .keyboard-shortcut-labels-container {
+	display: flex;
+	display: -webkit-flex;
+
+	flex-direction: row;
+	-webkit-flex-direction: row;
+}
+
+.keyboard-shortcuts-container > input, .keyboard-shortcut-labels-container > label {
+	flex: 1;
+	-webkit-flex: 1;
+}
+
+.keyboard-shortcuts-container > input {
+	padding: $padding;
+	border: none;
+
+	outline: none;
+}
+
+.keyboard-shortcut-labels-container > label {
+	font-size: 0.8rem;
+
+	margin: $padding 0 ($padding / 2) 0;
+}
+
+.no-play-music-content {
+	display: flex;
+	display: -webkit-flex;
+
+	flex-direction: column;
+	-webkit-flex-direction: column;
+
+	header {
+		margin-bottom: $padding * 1.5;
+	}
+
+	p:last-of-type {
+		flex: 1;
+		-webkit-flex: 1;
+	}
+}
+
+.open-play-tab-btn {
+	display: block;
+
+	margin: 0 auto;
+	padding: 10px;
+
+	border-bottom-style: solid;
+	border-color: darken($secondary-color, 15%);
+	border-radius: 2px;
+
+	background-color: darken($secondary-color, 5%);
+
+	color: $bg-color;
+
+	transition: all 0.3s ease;
+}
+
+.open-play-tab-btn:hover {
+	background-color: darken($secondary-color, 10%);
+	border-color: darken($secondary-color, 20%);
+}
+
+.open-play-tab-btn:active {
+	background-color: darken($secondary-color, 15%);
+	border-color: darken($secondary-color, 25%);
+	border-width: 1px;
+}
+
+/**
+	SVG Properties
+**/
+.btn {
+	fill: $primary-color;
+}
+
+.transition-from-center-to-right {
+	-webkit-animation: transCenterToRight .6s ease both;
+	animation: transCenterToRight .6s ease both;
+}
+
+.transition-from-center-to-left {
+	-webkit-animation: transCenterToLeft .6s ease both;
+	animation: transCenterToLeft .6s ease both;
+}
+
+.transition-from-left-to-center {
+	-webkit-animation: transLeftToCenter .6s ease both;
+	animation: transLeftToCenter .6s ease both;
+}
+
+.transition-from-right-to-center { 
+	-webkit-animation: transRightToCenter .6s ease both;
+	animation: transRightToCenter .6s ease both;
+}
+
+@-webkit-keyframes transCenterToRight {
+	to { -webkit-transform: translateX(100%); }
+}
+
+@keyframes transCenterToRight {
+	to { transform: translateX(100%); }
+}
+
+@-webkit-keyframes transCenterToLeft {
+	to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes transCenterToLeft {
+	to { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes transLeftToCenter {
+	from { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes transLeftToCenter {
+	from { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes transRightToCenter {
+	from { -webkit-transform: translateX(100%); }
+}
+
+@keyframes transRightToCenter {
+	from { transform: translateX(100%); }
+}
+
+$track-width: 6px;
+
+::-webkit-scrollbar {
+    width: $track-width;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: $track-width / 2;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: $track-width / 2;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(0,0,0,0.2); 
+}
